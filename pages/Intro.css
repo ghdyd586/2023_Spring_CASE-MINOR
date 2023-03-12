@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Silom';
+    src: url('../src/Silom.ttf');
+}
+body{
+    font-family: 'Silom';
+}
+
+.HeadWrapper{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.HeadChar i a{
+    text-decoration: none;
+    color : black;
+}
+
+.OtherChar i a{
+    text-decoration: none;
+    color : grey;
+    
+}
+
+.OtherChar{
+    margin-top: 7px;
+    font-size: 40px;
+    color: grey;
+}
+
+.HeadChar{
+    font-size: 50px;
+}
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntroText{
+    display: flex;
+    font-size: 70px;
+    line-height: 200px;
+}
+
+.Introduction{
+    margin-top: 20px;
+
+}
