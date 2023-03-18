@@ -8,12 +8,14 @@ body{
 
 .HeadWrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
 
 .HeadContainer{
-    margin-top: 2%;
-    margin-left: 5%;
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
     gap: 10px;

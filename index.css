@@ -3,6 +3,8 @@
     font-family: 'Silom';
     src: url('./src/Silom.ttf');
 }
+
+
 body{
     font-family: 'Silom';
 }
@@ -12,12 +14,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-width: 100%;
     gap: 5px;
 }
 .MainPage a{
     font-family: 'Silom';
     text-decoration: none;
-    font-size: 100px;
+    font-size: 280%;
     /* color: #E94420; */
     color: #000000;
 }

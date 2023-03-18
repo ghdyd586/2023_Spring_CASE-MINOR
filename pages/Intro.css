@@ -8,14 +8,106 @@ body{
     font-family: 'Silom';
 }
 
+
+@media (max-width : 300px) {
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .IntroText{
+        display: flex;
+        font-size: 30px;
+        line-height: 200px;
+    }
+
+    .OtherChar{
+        margin-top: 7px;
+        font-size: 25px;
+    }
+    
+    .HeadChar{
+        font-size: 35px;
+    }
+    .Image img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (min-width : 300px) {
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .IntroText{
+        display: flex;
+        font-size: 40px;
+        line-height: 200px;
+    }
+    
+    .Introduction{
+        margin-top: 20px;
+    
+    }
+
+    .OtherChar{
+        margin-top: 7px;
+        font-size: 40px;
+    }
+    
+    .HeadChar{
+        font-size: 50px;
+    }
+    .Image img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width : 600px){
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .IntroText{
+        display: flex;
+        font-size: 70px;
+        line-height: 200px;
+    }
+    
+    .Introduction{
+        margin-top: 20px;
+    
+    }
+    
+    .OtherChar{
+        margin-top: 7px;
+        font-size: 40px;
+    }
+    
+    .HeadChar{
+        font-size: 50px;
+    }
+}
+
 .HeadWrapper{
     display: flex;
-    background-color: aquamarine;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
 
 .HeadContainer{
-    margin-top: 2%;
-    margin-left: 5%;
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -24,7 +116,6 @@ body{
 
 .CurrentPage{
     margin-top: 3%;
-    margin-right: 5%;
     display: flex;
 
 }
@@ -44,29 +135,5 @@ body{
     
 }
 
-.OtherChar{
-    margin-top: 7px;
-    font-size: 40px;
-    color: grey;
-}
 
-.HeadChar{
-    font-size: 50px;
-}
-.Wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.IntroText{
-    display: flex;
-    font-size: 70px;
-    line-height: 200px;
-}
-
-.Introduction{
-    margin-top: 20px;
-
-}
