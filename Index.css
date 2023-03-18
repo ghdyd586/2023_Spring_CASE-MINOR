@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap');
 @font-face {
     font-family: 'Silom';
-    src: url('../src/Silom.ttf');
+    src: url('./src/Silom.ttf');
 }
 body{
     font-family: 'Silom';
@@ -12,11 +12,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap: 10px;
+    gap: 5px;
 }
-.MainPage i a{
+.MainPage a{
+    font-family: 'Silom';
     text-decoration: none;
     font-size: 100px;
     /* color: #E94420; */
-    color: #551a8b;
+    color: #000000;
 }

@@ -30,12 +30,12 @@ body{
     font-size: 30px;
 }
 
-.HeadChar i a{
+.HeadChar  a{
     text-decoration: none;
     color : black;
 }
 
-.OtherChar i a{
+.OtherChar  a{
     text-decoration: none;
     color : grey;
     
