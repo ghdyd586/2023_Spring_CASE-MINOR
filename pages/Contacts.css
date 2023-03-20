@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Silom';
     src: url('../src/Silom.ttf');
@@ -5,6 +7,7 @@
 body{
     font-family: 'Silom';
 }
+
 
 @media (max-width : 300px) {
     .Wrapper{
@@ -16,7 +19,7 @@ body{
     }
     .IntroText{
         display: flex;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 200px;
     }
 
@@ -60,7 +63,24 @@ body{
     .HeadChar{
         font-size: 50px;
     }
+    .Image img{
+        max-width: 100%;
+        height: auto;
+    }
 
+    .Developer{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        gap : 10px;
+    }
+    .TextContainer a {
+        font-size: 18px;
+    }
+
+    .TextContainer h2 {
+        font-size: 23px;
+    }
 
 }
 
@@ -91,8 +111,23 @@ body{
     .HeadChar{
         font-size: 50px;
     }
-}
 
+    .Developer{
+        display: flex;
+        width: 600px;
+        height: 300px;
+        gap : 10px;
+    }
+
+    .TextContainer a {
+        font-size: 30px;
+    }
+
+    .TextContainer h2 {
+        font-size: 40px;
+    }
+
+}
 
 .HeadWrapper{
     display: flex;
@@ -112,8 +147,8 @@ body{
 
 .CurrentPage{
     margin-top: 3%;
-    margin-right: 5%;
     display: flex;
+
 }
 
 .CurrentPage a{
@@ -131,46 +166,24 @@ body{
     
 }
 
-.OtherChar{
-    margin-top: 7px;
-    font-size: 40px;
-    color: grey;
-}
 
-.HeadChar{
-    font-size: 50px;
-}
 
-.Title{
+.ImageContainer{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    line-height: 200px;
 }
-.Table{
+
+.ImageContainer img{
+    max-width: 100%;
+    height: 90%;
+}
+
+
+.TextContainer {
     display: flex;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
+
 }
-.Table table {
-    margin: 0 20% 0 20%;
-    /* display: flex; */
-    width: 400px;
-    height: 250px;
-    justify-content: space-around;
-    border-collapse:collapse;
-}
-.Table table th{
-    font-size: 30px;
-    border-width: 1px;
-    height: 50px;
-}
-.Table table td{
-    font-size: 20px;
-    
-}
-
-
-
-
-
