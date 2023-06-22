@@ -19,7 +19,7 @@ body{
     }
     .IntroText{
         display: flex;
-        font-size: 30px;
+        font-size: 18px;
         line-height: 200px;
     }
 
@@ -46,7 +46,7 @@ body{
     }
     .IntroText{
         display: flex;
-        font-size: 40px;
+        font-size: 25px;
         line-height: 200px;
     }
     
@@ -79,7 +79,7 @@ body{
     
     .IntroText{
         display: flex;
-        font-size: 70px;
+        font-size: 50px;
         line-height: 200px;
     }
     
@@ -135,5 +135,9 @@ body{
     
 }
 
-
+.ImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
