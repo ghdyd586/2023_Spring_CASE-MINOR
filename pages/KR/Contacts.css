@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Silom';
-    src: url('../src/Silom.ttf');
+    src: url('../../src/Silom.ttf');
 }
 body{
     font-family: 'Silom';
 }
+
 
 @media (max-width : 300px) {
     .Wrapper{
@@ -16,8 +19,6 @@ body{
     }
     .IntroText{
         display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 18px;
         line-height: 200px;
     }
@@ -34,24 +35,6 @@ body{
         max-width: 100%;
         height: auto;
     }
-
-    .Table{
-        display: flex;
-        justify-content: center;
-    }
-    .Table table tr th{
-        font-size: 20px;
-        height: 40px;        
-        font-weight: 100;
-        font-style: oblique;
-        border-spacing: 2 0em;
-        padding-right: 7px;
-        padding-left : 7px;
-    }
-    .Table table tr td{
-        font-size: 14px;
-    }
-    
 }
 @media (min-width : 300px) {
     .Wrapper{
@@ -65,8 +48,6 @@ body{
         display: flex;
         font-size: 25px;
         line-height: 200px;
-        align-items: center;
-        justify-content: center;
     }
     
     .Introduction{
@@ -82,27 +63,24 @@ body{
     .HeadChar{
         font-size: 50px;
     }
+    .Image img{
+        max-width: 100%;
+        height: auto;
+    }
 
-    .Table{
+    .Developer{
         display: flex;
-        justify-content: center;
+        width: 100%;
+        height: 200px;
+        gap : 10px;
     }
-    .Table table tr th{
-        font-size: 30px;
-        height: 40px;        
-        font-weight: 100;
-        font-style: oblique;
-        border-spacing: 2 0em;
-        padding-right: 7px;
-        padding-left : 7px;
+    .TextContainer a {
+        font-size: 18px;
     }
-    .Table table tr td{
-        font-size: 21px;
-        padding-right: 7px;
-        padding-left : 7px;
-    }
-    
 
+    .TextContainer h2 {
+        font-size: 23px;
+    }
 
 }
 
@@ -116,9 +94,7 @@ body{
     
     .IntroText{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 200px;
     }
     
@@ -136,26 +112,22 @@ body{
         font-size: 50px;
     }
 
-    .Table{
+    .Developer{
         display: flex;
-        justify-content: center;
+        width: 600px;
+        height: 300px;
+        gap : 10px;
     }
-    .Table table tr th{
-        font-size: 50px;
-        height: 40px;        
-        font-weight: 100;
-        font-style: oblique;
-        border-spacing: 4 0em;
-        padding-right: 10px;
-        padding-left : 10px;
-    }
-    .Table table tr td{
-        font-size: 30px;
-        padding-right: 10px;
-        padding-left : 10px;
-    }
-}
 
+    .TextContainer a {
+        font-size: 20px;
+    }
+
+    .TextContainer h2 {
+        font-size: 30px;
+    }
+
+}
 
 .HeadWrapper{
     display: flex;
@@ -175,8 +147,8 @@ body{
 
 .CurrentPage{
     margin-top: 3%;
-    /* margin-right: 5%; */
     display: flex;
+
 }
 
 .CurrentPage a{
@@ -194,39 +166,35 @@ body{
     
 }
 
-.OtherChar{
-    margin-top: 7px;
-    color: grey;
-}
 
 
-.Table{
+.ImageContainer{
     display: flex;
     justify-content: center;
-}
-.Table table tr th{
-    font-size: 30px;
-    height: 40px;        
-    font-weight: 100;
-    font-style: oblique;
-    border-spacing: 4 0em;
-    padding-right: 10px;
-    padding-left : 10px;
-}
-.Table table tr td{
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left : 10px;
+    align-items: center;
 }
 
-.LanguageSel{
-    display : flex;
-    /* justify-content: left; */
+.ImageContainer img{
+    max-width: 300px;
+    height: 250px;
+}
+
+
+.TextContainer {
+    display: flex;
+    flex-direction: column;
     align-items: left;
+    justify-content: center;
 
 }
 
 
 .LanguageSel img{
     border: 0.1mm solid #000000;
+}
+.LanguageSel{
+    display : flex;
+    /* justify-content: left; */
+    align-items: left;
+
 }

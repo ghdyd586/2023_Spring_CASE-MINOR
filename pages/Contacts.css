@@ -94,7 +94,7 @@ body{
     
     .IntroText{
         display: flex;
-        font-size: 50px;
+        font-size: 35px;
         line-height: 200px;
     }
     
@@ -120,11 +120,11 @@ body{
     }
 
     .TextContainer a {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .TextContainer h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }
@@ -175,8 +175,8 @@ body{
 }
 
 .ImageContainer img{
-    max-width: 100%;
-    height: 90%;
+    max-width: 300px;
+    height: 250px;
 }
 
 
@@ -186,4 +186,15 @@ body{
     align-items: left;
     justify-content: center;
 
+}
+
+.LanguageSel{
+    display : flex;
+    /* justify-content: left; */
+    align-items: left;
+
+}
+
+.LanguageSel img{
+    border: 0.1mm solid #000000;
 }

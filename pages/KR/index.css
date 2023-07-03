@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300&display=swap');
 @font-face {
     font-family: 'Silom';
-    src: url('./src/Silom.ttf');
+    src: url('../../src/Silom.ttf');
 }
 
 

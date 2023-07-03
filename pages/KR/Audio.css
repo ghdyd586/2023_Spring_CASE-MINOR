@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Silom';
-    src: url('../src/Silom.ttf');
+    src: url('../../src/Silom.ttf');
 }
 body{
     font-family: 'Silom';
@@ -225,7 +225,6 @@ body{
     align-items: left;
 
 }
-
 
 .LanguageSel img{
     border: 0.1mm solid #000000;
