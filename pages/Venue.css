@@ -20,6 +20,9 @@
         width: 15px;
         height: 15px;
     }
+    .MapContainer iframe{
+        width: 100%;
+    }
 }
 @media (min-width : 300px) {
     .IntroText{
@@ -40,6 +43,9 @@
         width: 20px;
         height: 20px;
     }
+    .MapContainer iframe{
+        width: 100%;
+    }
 }
 @media (min-width : 600px){
     .IntroText{
@@ -57,6 +63,9 @@
     .sidebar ul span {
         display: flex;
         margin-top: 50%;
+    }
+    .MapContainer iframe{
+        width: 70%;
     }
 }
 @media (min-width : 800px){
@@ -76,6 +85,7 @@
         display: flex;
         margin-top: 40%;
     }
+    
 }
 @media (min-width : 1024px){
     .IntroText{
@@ -206,4 +216,49 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     margin-bottom: 71px;
 }
 
-/* navbar 아래로 오는 class는 무족권 margin-top or padding-top 100px 주기 */
+.MenuText{
+    width: 20%;
+    height: 10%;
+    padding-top: 100px;
+    display: flex;
+}
+
+.MenuText a{
+    font-size: 13px;
+    margin-left: 19px;
+}
+
+.ImageContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageContainer img{
+    width: 100% auto;
+}
+
+.BodyText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.BodyText a{
+    font-size: 20px;
+}
+
+.MapContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.MapContainer iframe{
+    height: 50vh;
+}
+
