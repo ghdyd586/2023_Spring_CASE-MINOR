@@ -192,8 +192,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     margin-top: 35px;
     margin-right: 10%;
     display: flex;
-    /* position: fixed; */
-    /* position: absolute; */
     position: relative;
 }
 
@@ -206,53 +204,5 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     margin-top: 31px;
     margin-left: 19px;
     margin-bottom: 71px;
-    /* position: fixed; */
 }
 
-.MainImg a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.MainImg a img{
-    width: 95%;
-    margin-top: 100px;
-}
-
-.TextBox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 64px;
-    
-}
-
-.TextBox a{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.TextBox2{
-    margin-top: 25px;
-    margin-left: 3%;   
-    margin-bottom: 20px; 
-}
-
-.TextBox2 a{
-
-    text-align: justify;
-}
-
-.VideoContainer{
-    display: flex;
-    
-}
-
-.VideoContainer a img{
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5%;
-    margin-top: 125px;
-}
