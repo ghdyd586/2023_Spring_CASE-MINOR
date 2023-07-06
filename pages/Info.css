@@ -21,9 +21,6 @@
         width: 15px;
         height: 15px;
     }
-    .MapContainer iframe{
-        width: 100%;
-    }
     input#menuicon + label span{
         margin-left: 1vh;
     }
@@ -49,9 +46,6 @@
         width: 20px;
         height: 20px;
     }
-    .MapContainer iframe{
-        width: 100%;
-    }
     input#menuicon + label span{
         margin-left: 1.5vh;
     }
@@ -74,8 +68,14 @@
         display: flex;
         margin-top: 50%;
     }
-    .MapContainer iframe{
-        width: 70%;
+    input#menuicon + label span{
+        margin-left: 4vh;
+    }
+}
+@media (min-width : 768px){
+    .IntroText{
+        margin-left: 20px;
+
     }
     input#menuicon + label span{
         margin-left: 4vh;
@@ -102,9 +102,7 @@
     input#menuicon + label span{
         margin-left: 3.5vh;
     }
-    
 }
-
 @media (min-width : 1024px){
     .IntroText{
         font-size: 30px;
@@ -142,7 +140,6 @@ input#menuicon + label span{
     background-color: #000;
     transition: all .35s;
     margin-top: -5px;
-
 }
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
@@ -249,54 +246,33 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .MenuText a{
     font-size: 13px;
     margin-left: 19px;
+    margin-bottom: 30px;
 }
 
-.ImageContainer{
-    margin-top: 20px;
+.MainImg a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-.ImageContainer img{
+.MainImg a img{
+    width: 95%;
+}
+
+.TableContainer{
     width: 100%;
-}
-
-.ImageContainer2{
-    margin-top: 20%;
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.ImageContainer2 img{
-    width: 90%;
-}
-
-.BodyText{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 8%;
 }
 
-.BodyText a{
-    font-size: 20px;
+.table {
+    border-bottom: 1px solid black;
 }
 
-.MapContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.MapContainer iframe{
-    margin-top: 8%;
-    height: 50vh;
-    width: 90%;
-    margin-bottom: 10%;
+.table th,td{
+    padding: 15px;
+    
 }
 
