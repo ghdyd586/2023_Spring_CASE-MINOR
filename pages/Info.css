@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'CMF';
+    src: url('../src/CaseMinorFont.otf');
+}
+head{
+    font-family: 'CMF';
+}
+body{
+    font-family: 'CMF';
+}
 @media (max-width : 300px) {
     .IntroText{
+        font-size: 15px;
         margin-top: 21px;
         margin-left: 5px;
     }    
@@ -9,7 +20,7 @@
         font-size: 12px;
     }
     .sidebar ul{
-        margin-top: 20%;
+        margin-top: 30%;
         
     }
     .sidebar ul span {
@@ -21,14 +32,30 @@
         width: 15px;
         height: 15px;
     }
+    .MapContainer iframe{
+        width: 100%;
+    }
     input#menuicon + label span{
         margin-left: 1vh;
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 1vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 14px;
+        font-size: 15px;
+    }
+    .sidebar .Header{
+        height: 8%;
+    }
+    .Header{
+        height: 7%;
     }
 }
 @media (min-width : 300px) {
     .IntroText{
-        font-size: 20px;
-        margin-left: 10px;
+        font-size: 22px;
+        margin-left: 12px;
 
     }
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
@@ -47,12 +74,48 @@
         height: 20px;
     }
     input#menuicon + label span{
-        margin-left: 1.5vh;
+        margin-left: 1vh;
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 1vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 19px;
+    }
+    .Header{
+        height: 5%;
+    }
+    .sidebar .Header{
+        height: 8.5%;
+    }
+}
+@media (min-width : 360px){
+    .Header{
+        height: 7.2%;
+    }
+    .sidebar ul{
+        margin-top: 35%;
+    }
+}
+@media (min-width : 400px){
+    .Header{
+        height: 6.2%;
+    }
+    .sidebar .Header{
+        height: 7.2%;
+    }
+    .sidebar ul{
+        margin-top: 35%;
+    }
+}
+@media (min-width : 540px){
+    .sidebar ul{
+        margin-top: 20%;
     }
 }
 @media (min-width : 600px){
     .IntroText{
-        font-size: 25px;
+        font-size: 27px;
         margin-left: 20px;
     }
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 40%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
@@ -69,30 +132,50 @@
         margin-top: 50%;
     }
     input#menuicon + label span{
-        margin-left: 4vh;
+        margin-left: 2.5vh;
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 2.5vh;
+    }
+    
+    .sidebar .Header .IntroText{
+        margin-left: 20px;
+    }
+    .Header{
+        height: 6%;
+    }
+    .sidebar .Header{
+        height: 7%;
     }
 }
 @media (min-width : 768px){
     .IntroText{
         margin-left: 20px;
+        font-size: 35px;
 
     }
     input#menuicon + label span{
+        margin-left: 3.5vh;
+    }
+    .sidebar input#menuicon + label span{
         margin-left: 4vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 25px;
     }
 }
 @media (min-width : 800px){
     .IntroText{
-        font-size: 30px;
+        font-size: 35px;
         margin-left: 20px;
     }
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
     .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
-        font-size: 20px;
+        font-size: 25px;
     }
     .sidebar ul{
-        margin-top: 10%;
+        margin-top: 20%;
         
     }
     .sidebar ul span {
@@ -102,10 +185,16 @@
     input#menuicon + label span{
         margin-left: 3.5vh;
     }
+    .sidebar input#menuicon + label span{
+        margin-left: 3.5vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 20px;
+    }
 }
 @media (min-width : 1024px){
     .IntroText{
-        font-size: 30px;
+        font-size: 40px;
         margin-left: 30px;
     }
     
@@ -124,9 +213,53 @@
         margin-top: 10%;
     }
     input#menuicon + label span{
-        margin-left: 9vh;
+        margin-left: 5vh;
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 5vh;
     }
     
+    .sidebar .Header .IntroText{
+        margin-left: 35px;
+    }
+    .Header{
+        height: 7%;
+    }
+    
+}
+@media (min-width :1920px){
+    .sidebar .Header .IntroText{
+        margin-left: 50px;
+    }
+
+    .IntroText{
+        margin-left: 50px;
+    }
+
+    input#menuicon + label span{
+        margin-left: 110px;
+
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 110px;
+
+    }
+}
+
+@media (min-width :2560px){
+    .sidebar .Header .IntroText{
+        margin-left: 60px;
+    }
+    .Header .IntroText{
+        margin-left: 60px;
+    }
+    input#menuicon + label span{
+        margin-left: 15vh;
+    }
+    .sidebar input#menuicon + label span{
+        margin-left: 15vh;
+    }
+
 }
 input#menuicon + label{
     display: block;
@@ -144,15 +277,6 @@ input#menuicon + label span{
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
 input#menuicon + label span:nth-child(3){top:70%;}
-input#menuicon:checked + label span:nth-child(1){
-    top:40%; transform: translateY(-50%) rotate(45deg);
-}
-input#menuicon:checked + label span:nth-child(2){
-    opacity: 0;
-}
-input#menuicon:checked + label span:nth-child(3){
-    top:40%; transform: translateY(-50%) rotate(-45deg);
-}
 
 .sidebar ul li{
     list-style:none;
@@ -173,13 +297,26 @@ div.sidebar{
     width: 100%; height: 100%;
     background-color: #fff;
     position: fixed; top:0;
-    right: 0%;
+    right: -300%;
     z-index: 1000;
     transition: all .35s;
     text-align: left;
 
 }
 
+.sidebar .Header .IntroText{
+    margin-top: 35px;
+}
+
+.sidebar input#menuicon + label span:nth-child(1){
+    top:40%; transform: translateY(-50%) rotate(45deg);
+}
+.sidebar input#menuicon + label span:nth-child(2){
+    opacity: 0;
+}
+.sidebar input#menuicon + label span:nth-child(3){
+    top:40%; transform: translateY(-50%) rotate(-45deg);
+}
 
 
 input#menuicon:checked + label + div{
@@ -195,7 +332,7 @@ input#menuicon + label + div > ul{
 input#menuicon + label + div > ul > li{line-height: 80px;}
 
 /* 기본 구조 */
-.wrap {max-width:95%; height: 271px; margin:64px auto; overflow-x:auto; white-space:nowrap; }
+.wrap {max-width:95%; height: 300px; margin:64px auto; overflow-x:auto; white-space:nowrap; }
 
 /* 가로 스크롤 적용 */
 .scroll__wrap {font-size:13px; scroll-snap-type: x mandatory;}
@@ -276,3 +413,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     
 }
 
+.sidebar.on{
+    right:0;
+}
