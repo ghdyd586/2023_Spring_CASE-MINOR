@@ -37,8 +37,6 @@ body{
         margin-top: 20px;
         margin-left: 3%;
     }    
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
         font-size: 15px;
     }
@@ -56,11 +54,15 @@ body{
         height: 15px;
         margin-right: 1.5vh;
     }
-
+    
     .sidebar .Header .IntroText{
         margin-left: 3%;
         font-size: 15px;
     }
+    
+    .scroll--element {width: 40%;height: 20vh;}
+    .scroll--element2 {width: 40%; font-size:12px;}
+    .wrap {max-width:95%; height: 25vh;}
     
     
 }
@@ -73,8 +75,7 @@ body{
     .sidebar{
         font-size: 22px;
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
+
     .sidebar ul{
         margin-top: 20%;
         
@@ -94,8 +95,18 @@ body{
     .sidebar .Header .IntroText{
         margin-left: 1.5vh;
     }
+    .scroll--element {width: 40%;height: 30vh;}
+    .scroll--element2 {width: 40%; font-size:17px;}
+    .wrap {max-width:95%; height: 35vh;}
 
 }
+
+@media (min-width : 400px){
+    .scroll--element2 {font-size: 20px;}
+    .wrap {max-width:95%; height: 35vh;}
+}
+
+
 @media (min-width : 540px){
     .sidebar ul{
         margin-top: 15%;
@@ -113,6 +124,9 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
+
+    .scroll--element2 {font-size:20px;}
+    .wrap {max-width:95%; height: 40vh;}
 }
 
 @media (min-width : 600px){
@@ -121,8 +135,6 @@ body{
         margin-left: 20px;
 
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 40%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 40%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
         font-size: 19px;
     }
@@ -133,13 +145,7 @@ body{
         display: flex;
         margin-top: 50%;
     }
-    input#menuicon + label span{
-        margin-left: 2.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 2.5vh;
-    }
-    
+
     .sidebar .Header .IntroText{
         margin-left: 20px;
     }
@@ -147,6 +153,8 @@ body{
     .BtnContainer{
         margin-right: 4.5vh;
     }
+    .scroll--element2 {font-size:20px;}
+    .wrap {max-width:95%; height: 40vh;}
 }
 
 @media (min-width : 768px){
@@ -154,12 +162,7 @@ body{
         margin-left: 20px;
         font-size: 35px;
     }
-    input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 4vh;
-    }
+
     .sidebar ul span{ 
         margin-top: 30%;
     }
@@ -171,8 +174,11 @@ body{
         font-size: 35px;
     }
     .BtnContainer{
-        margin-right: 6vh;
+        margin-right: 5vh;
     }
+
+    .scroll--element2 {font-size:20px;}
+    .wrap {max-width:95%; height: 30vh;}
     
 }
 @media (min-width : 800px){
@@ -181,8 +187,8 @@ body{
         margin-left: 20px;
 
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
+    .scroll--element {width: 35%;}
+    .scroll--element2 {width: 35%;}
     .sidebar{
         font-size: 40px;
     }
@@ -200,8 +206,11 @@ body{
         font-size: 40px;
     }
     .BtnContainer{
-        margin-right: 5.5vh;
+        margin-right: 2vh;
     }
+
+    .scroll--element2 {font-size:25px;}
+    .wrap {max-width:95%; height: 35vh;}
 }
 
 
@@ -211,8 +220,10 @@ body{
         margin-left: 30px;
     }
     
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 200px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
+    .scroll--element {width: 30%; height: 30vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:25px;}
+    .wrap {max-width:95%; height: 35vh;}
     .sidebar{
         font-size: 20px;
     }
@@ -233,22 +244,21 @@ body{
     }
 
     .BtnContainer{
-        margin-right: 7vh;
+        margin-right: 3vh;
     }
     
 }
-
-@media (min-width :1920px){
+@media (min-width :1512px){
     .sidebar .Header .IntroText{
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .IntroText{
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .BtnContainer{
-        margin-right: 8vh;
+        margin-right: 5vh;
     }
 
     .sidebar ul{
@@ -259,6 +269,39 @@ body{
         display: flex;
         margin-top: 10%;
     }
+
+    .scroll--element {width: 30%; height: 50vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:35px;}
+    .wrap {max-width:95%; height: 55vh;}
+
+}
+@media (min-width :1920px){
+    .sidebar .Header .IntroText{
+        margin-left: 50px;
+    }
+
+    .IntroText{
+        margin-left: 50px;
+    }
+
+    .BtnContainer{
+        margin-right: 5vh;
+    }
+
+    .sidebar ul{
+        margin-top: 8%;
+    }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 10%;
+    }
+
+    .scroll--element {width: 30%; height: 50vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:35px;}
+    .wrap {max-width:95%; height: 55vh;}
 
 
 }
@@ -294,10 +337,16 @@ body{
         font-size: 50px;
     }
 
-    .Header{
-        margin-bottom: 5%;
-    }
 
+    .scroll--element {width: 30%; height: 70vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:60px;}
+    .wrap {max-width:95%; height: 80vh;}
+
+    .BtnContainer{
+        margin-right: 6vh;
+    }
+    
 
 }
 
@@ -307,7 +356,6 @@ input#menuicon + label{
     cursor: pointer;
 }
 input#menuicon + label span{
-    display: block;
     position: absolute;
     width: 100%; height: 9%;
     background-color: #000;
@@ -370,16 +418,23 @@ input#menuicon + label + div > ul{
 input#menuicon + label + div > ul > li{line-height: 80px;}
 
 /* 기본 구조 */
-.wrap {max-width:95%; height: 300px; margin:64px auto; overflow-x:auto; white-space:nowrap; }
+/* .wrap {max-width:95%; height: 25vh; margin:64px auto; overflow-x:auto; white-space:nowrap; } */
 
 /* 가로 스크롤 적용 */
 .scroll__wrap {font-size:13px; scroll-snap-type: x mandatory;}
 .scroll--element + .scroll--element {margin-left:8px;}
-.scroll--element {scroll-snap-align: start; display:inline-block;  border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-.scroll__wrap img{
-    width: 100%; height: 247px;
+.scroll--element {scroll-snap-align: start; display:inline-block; border-radius: 10px; background:#eeeeee; text-align:center;}
+.scroll--element2 {scroll-snap-align: start; display:inline-block; border-radius: 10px; text-align:center;}
+.wrap {margin-left: 2.5%; margin-right:2.5%; margin-top: 10%; overflow-x:auto; white-space:nowrap;}
+.scroll--element a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.scroll--element2 {scroll-snap-align: start; display:inline-block;  border-radius: 10px; font-size:10px;  text-align:center;}
+.scroll--element a img{
+    width: 60%;
+    
+}
 .scroll--element2 + .scroll--element2 {margin-left:8px;}
 .scroll__wrap2 { font-size:13px; height: 16px; scroll-snap-type: x mandatory;}
 
@@ -441,17 +496,15 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     text-align: justify;
 }
 
-.VideoContainer{
+.VideoContainer a{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .VideoContainer a img{
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5%;
     margin-top: 125px;
+    width: 95%;
 }
 
 .sidebar.on{
