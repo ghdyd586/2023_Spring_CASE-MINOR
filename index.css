@@ -19,17 +19,28 @@ html, body {margin: 0px; padding: 0px;}
     src: url('../src/CaseMinorFont22.otf');
 }
 
+@font-face{
+    font-family: 'CCMF';
+    src: url('../src/CCMF.otf');
+}
+@font-face{
+    font-family: 'CCMF2';
+    src: url('../src/CCMF2.otf');
+}
+
+
+
 
 .Header{
-    font-family: 'CMF';
+    font-family: 'CCMF2';
 }
 
 .sidebar{
-    font-family: 'CMF';
+    font-family: 'CCMF2';
 }
 
 body{
-    font-family: 'CMF2';
+    font-family: 'CCMF2';
 }
 @media (max-width : 300px) {
     .IntroText{
@@ -64,6 +75,9 @@ body{
     .scroll--element2 {width: 40%; font-size:12px;}
     .wrap {max-width:95%; height: 25vh;}
     
+    .TextBox{
+        font-size: 5px;
+    }
     
 }
 @media (min-width : 300px) {
@@ -303,7 +317,9 @@ body{
     .scroll--element2 {font-size:35px;}
     .wrap {max-width:95%; height: 55vh;}
 
-
+    .TextBox{
+        font-size: 40px;
+    }
 }
 
 @media (min-width :2560px){
@@ -426,14 +442,12 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .scroll--element {scroll-snap-align: start; display:inline-block; border-radius: 10px; background:#eeeeee; text-align:center;}
 .scroll--element2 {scroll-snap-align: start; display:inline-block; border-radius: 10px; text-align:center;}
 .wrap {margin-left: 2.5%; margin-right:2.5%; margin-top: 10%; overflow-x:auto; white-space:nowrap;}
-.scroll--element a{
+.scroll--element a {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20% 20% 20% 20%;
 }
 .scroll--element a img{
-    width: 60%;
-    
+    width: 100%;
 }
 .scroll--element2 + .scroll--element2 {margin-left:8px;}
 .scroll__wrap2 { font-size:13px; height: 16px; scroll-snap-type: x mandatory;}
@@ -452,13 +466,13 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 }
 
 .BtnContainer{
-    margin-top: 5%;
+    margin-top: 2.5%;
     display: flex;
     position: relative;
 }
 
 .IntroText{
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 
 .MainImg a{
@@ -475,14 +489,15 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     display: flex;
     flex-direction: column;
     margin-top: 64px;
-    
+    width: 95s%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .TextBox a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    letter-spacing: 3px;
 }
 
 .TextBox2{
