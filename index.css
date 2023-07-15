@@ -1,26 +1,49 @@
+html, body {margin: 0px; padding: 0px;}
 @font-face {
+    font-family: 'Head';
+    src: url('../src/Head.otf');
+    
+}
+@font-face{
+    font-family: 'Body';
+    src: url('../src/Body.otf');
+}
+
+@font-face{
     font-family: 'CMF';
     src: url('../src/CaseMinorFont.otf');
 }
-head{
+
+@font-face{
+    font-family: 'CMF2';
+    src: url('../src/CaseMinorFont22.otf');
+}
+
+
+.Header{
     font-family: 'CMF';
 }
-body{
+
+.sidebar{
     font-family: 'CMF';
+}
+
+body{
+    font-family: 'CMF2';
 }
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
-        margin-top: 21px;
-        margin-left: 5px;
+        margin-top: 20px;
+        margin-left: 3%;
     }    
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
     .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
-        font-size: 12px;
+        font-size: 15px;
     }
     .sidebar ul{
-        margin-top: 30%;
+        margin-top: 20%;
         
     }
     .sidebar ul span {
@@ -31,32 +54,24 @@ body{
     .BtnContainer{
         width: 15px;
         height: 15px;
+        margin-right: 1.5vh;
     }
-    .MapContainer iframe{
-        width: 100%;
-    }
-    input#menuicon + label span{
-        margin-left: 1vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 1vh;
-    }
+
     .sidebar .Header .IntroText{
-        margin-left: 14px;
+        margin-left: 3%;
         font-size: 15px;
     }
-    .sidebar .Header{
-        height: 8%;
-    }
-    .Header{
-        height: 7%;
-    }
+    
+    
 }
 @media (min-width : 300px) {
     .IntroText{
         font-size: 22px;
-        margin-left: 12px;
+        margin-left: 1.5vh;
 
+    }
+    .sidebar{
+        font-size: 22px;
     }
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
     .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
@@ -73,47 +88,30 @@ body{
         width: 20px;
         height: 20px;
     }
-    input#menuicon + label span{
-        margin-left: 1vh;
-    }
-
-    .sidebar input#menuicon + label span{
-        margin-left: 1vh;
+    .BtnContainer{
+        margin-right: 1.5vh;
     }
     .sidebar .Header .IntroText{
-        margin-left: 19px;
+        margin-left: 1.5vh;
     }
-    .Header{
-        height: 5%;
-    }
-    .sidebar .Header{
-        height: 8.5%;
-    }
-}
 
-
-@media (min-width : 360px){
-    .Header{
-        height: 7.2%;
-    }
-    .sidebar ul{
-        margin-top: 35%;
-    }
-}
-@media (min-width : 400px){
-    .Header{
-        height: 6.2%;
-    }
-    .sidebar .Header{
-        height: 7.2%;
-    }
-    .sidebar ul{
-        margin-top: 35%;
-    }
 }
 @media (min-width : 540px){
     .sidebar ul{
-        margin-top: 20%;
+        margin-top: 15%;
+    }
+    .IntroText{
+        margin-left: 2vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 2vh;
+    }
+    .sidebar ul span {
+        display: flex;
+        margin-top: 45%;
+    }
+    .BtnContainer{
+        margin-right: 2vh;
     }
 }
 
@@ -130,7 +128,6 @@ body{
     }
     .sidebar ul{
         margin-top: 15%;
-        
     }
     .sidebar ul span {
         display: flex;
@@ -146,11 +143,9 @@ body{
     .sidebar .Header .IntroText{
         margin-left: 20px;
     }
-    .Header{
-        height: 6%;
-    }
-    .sidebar .Header{
-        height: 7%;
+    
+    .BtnContainer{
+        margin-right: 4.5vh;
     }
 }
 
@@ -165,21 +160,31 @@ body{
     .sidebar input#menuicon + label span{
         margin-left: 4vh;
     }
+    .sidebar ul span{ 
+        margin-top: 30%;
+    }
+    .sidebar{
+        font-size: 35px;
+    }
     .sidebar .Header .IntroText{
-        margin-left: 25px;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .BtnContainer{
+        margin-right: 6vh;
     }
     
 }
 @media (min-width : 800px){
     .IntroText{
-        font-size: 35px;
+        font-size: 40px;
         margin-left: 20px;
 
     }
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
     .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
-        font-size: 25px;
+        font-size: 40px;
     }
     .sidebar ul{
         margin-top: 20%;
@@ -187,16 +192,15 @@ body{
     }
     .sidebar ul span {
         display: flex;
-        margin-top: 40%;
+        margin-top: 50%;
     }
-    input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
+
     .sidebar .Header .IntroText{
         margin-left: 20px;
+        font-size: 40px;
+    }
+    .BtnContainer{
+        margin-right: 5.5vh;
     }
 }
 
@@ -205,7 +209,6 @@ body{
     .IntroText{
         font-size: 40px;
         margin-left: 30px;
-
     }
     
     .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 200px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
@@ -215,26 +218,24 @@ body{
     }
     .sidebar ul{
         margin-top: 10%;
-        
+        font-size: 40px;
     }
     
     .sidebar ul span {
         display: flex;
-        margin-top: 10%;
+        margin-top: 20%;
     }
-    input#menuicon + label span{
-        margin-left: 5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 5vh;
-    }
+
     
     .sidebar .Header .IntroText{
-        margin-left: 35px;
+        margin-left: 30px;
+        font-size: 40px;
     }
-    .Header{
-        height: 7%;
+
+    .BtnContainer{
+        margin-right: 7vh;
     }
+    
 }
 
 @media (min-width :1920px){
@@ -246,14 +247,20 @@ body{
         margin-left: 50px;
     }
 
-    input#menuicon + label span{
-        margin-left: 110px;
-
+    .BtnContainer{
+        margin-right: 8vh;
     }
-    .sidebar input#menuicon + label span{
-        margin-left: 110px;
 
+    .sidebar ul{
+        margin-top: 8%;
     }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 10%;
+    }
+
+
 }
 
 @media (min-width :2560px){
@@ -262,13 +269,35 @@ body{
     }
     .Header .IntroText{
         margin-left: 60px;
+        font-size: 80px;
     }
-    input#menuicon + label span{
-        margin-left: 15vh;
+
+
+    .BtnContainer{
+        margin-right: 10vh;
     }
-    .sidebar input#menuicon + label span{
-        margin-left: 15vh;
+
+    .sidebar .Header .IntroText{
+        font-size: 80px;
     }
+    .sidebar ul{
+        margin-top: 0;
+    }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 7%;
+    }
+
+
+    .sidebar ul li{
+        font-size: 50px;
+    }
+
+    .Header{
+        margin-bottom: 5%;
+    }
+
 
 }
 
@@ -283,7 +312,6 @@ input#menuicon + label span{
     width: 100%; height: 9%;
     background-color: #000;
     transition: all .35s;
-    margin-top: -8px;
 }
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
@@ -304,7 +332,7 @@ input#menuicon + label{overflow: hidden;}
 
 
 
-div.sidebar{
+.sidebar{
     width: 100%; height: 100%;
     background-color: #fff;
     position: fixed; top:0;
@@ -312,10 +340,6 @@ div.sidebar{
     z-index: 1000;
     transition: all .35s;
     text-align: left;
-
-}
-.sidebar .Header .IntroText{
-    margin-top: 35px;
 }
 
 .sidebar input#menuicon + label span{
@@ -360,31 +384,26 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .scroll__wrap2 { font-size:13px; height: 16px; scroll-snap-type: x mandatory;}
 
 
-
 .Header{
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
+    top: 0;
+    right: 0; left: 0;
     width: 100%; 
-    margin-top: -10px;
     background-color: white;
+    align-items: center;
+    padding: 0;
 }
 
 .BtnContainer{
-    margin-top: 35px;
-    margin-right: 10%;
+    margin-top: 5%;
     display: flex;
     position: relative;
 }
 
-.BtnContainer img{
-    width : 16px;
-    height: 12px;
-}
-
 .IntroText{
-    margin-top: 27px;
-    margin-bottom: 71px;
+    margin-top: 5%;
 }
 
 .MainImg a{
@@ -395,7 +414,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 
 .MainImg a img{
     width: 95%;
-    margin-top: 50px;
 }
 
 .TextBox{
@@ -439,3 +457,4 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .sidebar.on{
     right:0;
 }
+
