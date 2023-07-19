@@ -1,26 +1,32 @@
-@font-face {
-    font-family: 'CMF';
-    src: url('../src/CaseMinorFont.otf');
+html, body {margin: 0px; padding: 0px;}
+
+@font-face{
+    font-family: 'CCMF2';
+    src: url('../src/CCMF2.otf');
 }
-head{
-    font-family: 'CMF';
+
+.Header{
+    font-family: 'CCMF2';
 }
+
+.sidebar{
+    font-family: 'CCMF2';
+}
+
 body{
-    font-family: 'CMF';
+    font-family: 'CCMF2';
 }
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
-        margin-top: 21px;
-        margin-left: 5px;
-    }    
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
+        margin-top: 20px;
+        margin-left: 3%;
+    }        
     .sidebar{
-        font-size: 12px;
+        font-size: 15px;
     }
     .sidebar ul{
-        margin-top: 30%;
+        margin-top: 20%;
         
     }
     .sidebar ul span {
@@ -31,35 +37,38 @@ body{
     .BtnContainer{
         width: 15px;
         height: 15px;
+        margin-right: 1.5vh;
     }
-    .MapContainer iframe{
-        width: 100%;
-    }
-    input#menuicon + label span{
-        margin-left: 1vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 1vh;
-    }
+    
     .sidebar .Header .IntroText{
-        margin-left: 14px;
+        margin-left: 3%;
         font-size: 15px;
     }
-    .sidebar .Header{
-        height: 8%;
+    .BodyText a{
+        font-size: 15px;
     }
-    .Header{
-        height: 7%;
+
+    .MenuText a{
+        font-size: 15px;
+    }
+    .MainImg a img{
+        width: 95%;
+    }
+
+    .LineUpContainer a{
+        font-size: 15px;
     }
 }
 @media (min-width : 300px) {
     .IntroText{
         font-size: 22px;
-        margin-left: 12px;
+        margin-left: 1.5vh;
 
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 45%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 45%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
+    .sidebar{
+        font-size: 22px;
+    }
+
     .sidebar ul{
         margin-top: 20%;
         
@@ -72,107 +81,124 @@ body{
     .BtnContainer{
         width: 20px;
         height: 20px;
-    }
-    input#menuicon + label span{
-        margin-left: 1vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 1vh;
+        margin-right: 1.5vh;
     }
     .sidebar .Header .IntroText{
-        margin-left: 19px;
+        margin-left: 1.5vh;
     }
-    .Header{
-        height: 5%;
+    .BodyText a{
+        font-size: 15px;
     }
-    .sidebar .Header{
-        height: 8.5%;
+
+    .MenuText a{
+        font-size: 15px;
     }
 }
+
 @media (min-width : 360px){
-    .Header{
-        height: 7.2%;
+    .MenuText a{
+        font-size: 20px;
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .BodyText a{
+        font-size: 20px;
     }
-}
-@media (min-width : 400px){
-    .Header{
-        height: 6.2%;
-    }
-    .sidebar .Header{
-        height: 7.2%;
-    }
-    .sidebar ul{
-        margin-top: 35%;
+    .LineUpContainer a{
+        font-size: 20px;
     }
 }
+
+
 @media (min-width : 540px){
     .sidebar ul{
-        margin-top: 20%;
+        margin-top: 15%;
+    }
+    .IntroText{
+        margin-left: 2vh;
+    }
+    .sidebar .Header .IntroText{
+        margin-left: 2vh;
+    }
+    .sidebar ul span {
+        display: flex;
+        margin-top: 45%;
+    }
+    .BtnContainer{
+        margin-right: 2vh;
     }
 }
 @media (min-width : 600px){
     .IntroText{
         font-size: 27px;
         margin-left: 20px;
+
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 40%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 40%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
         font-size: 19px;
     }
     .sidebar ul{
         margin-top: 15%;
-        
     }
     .sidebar ul span {
         display: flex;
         margin-top: 50%;
     }
-    input#menuicon + label span{
-        margin-left: 2.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 2.5vh;
-    }
-    
+
     .sidebar .Header .IntroText{
         margin-left: 20px;
     }
-    .Header{
-        height: 6%;
+    
+    .BtnContainer{
+        margin-right: 4.5vh;
     }
-    .sidebar .Header{
-        height: 7%;
+    .BodyText a{
+        font-size: 20px;
+    }
+
+    .MenuText a{
+        font-size: 20px;
+    }
+    .LineUpContainer a{
+        font-size: 20px;
     }
 }
 @media (min-width : 768px){
     .IntroText{
         margin-left: 20px;
         font-size: 35px;
+    }
 
+    .sidebar ul span{ 
+        margin-top: 30%;
     }
-    input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 4vh;
+    .sidebar{
+        font-size: 35px;
     }
     .sidebar .Header .IntroText{
-        margin-left: 25px;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .BtnContainer{
+        margin-right: 2vh;
+    }
+    .BodyText a{
+        font-size: 25px;
+    }
+
+    .MenuText a{
+        font-size: 25px;
+    }
+    .LineUpContainer a{
+        font-size: 25px;
     }
 }
 @media (min-width : 800px){
     .IntroText{
-        font-size: 35px;
+        font-size: 40px;
         margin-left: 20px;
+
     }
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 247px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
-        font-size: 25px;
+        font-size: 40px;
     }
     .sidebar ul{
         margin-top: 20%;
@@ -180,16 +206,15 @@ body{
     }
     .sidebar ul span {
         display: flex;
-        margin-top: 40%;
+        margin-top: 50%;
     }
-    input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 3.5vh;
-    }
+
     .sidebar .Header .IntroText{
         margin-left: 20px;
+        font-size: 40px;
+    }
+    .BtnContainer{
+        margin-right: 2vh;
     }
 }
 @media (min-width : 1024px){
@@ -198,35 +223,60 @@ body{
         margin-left: 30px;
     }
     
-    .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 200px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
         font-size: 20px;
     }
     .sidebar ul{
         margin-top: 10%;
-        
+        font-size: 40px;
     }
     
     .sidebar ul span {
         display: flex;
-        margin-top: 10%;
+        margin-top: 20%;
     }
-    input#menuicon + label span{
-        margin-left: 5vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 5vh;
-    }
+
     
     .sidebar .Header .IntroText{
-        margin-left: 35px;
+        margin-left: 30px;
+        font-size: 40px;
     }
-    .Header{
-        height: 7%;
+
+    .BtnContainer{
+        margin-right: 3vh;
+    }
+    .BodyText a{
+        font-size: 30px;
+    }
+
+    .MenuText a{
+        font-size: 30px;
+    }
+    .MainImg a img{
+        width: 45%;
+    }
+    .LineUpContainer a{
+        font-size: 30px;
+    }
+}
+
+@media (min-width :1440px){
+
+    .BodyText a{
+        font-size: 40px;
+    }
+    
+    .MenuText a{
+        font-size: 40px;
+    }
+    .LineUpContainer a{
+        font-size: 40px;
     }
     
 }
+    
+
+
 @media (min-width :1920px){
     .sidebar .Header .IntroText{
         margin-left: 50px;
@@ -236,43 +286,82 @@ body{
         margin-left: 50px;
     }
 
-    input#menuicon + label span{
-        margin-left: 110px;
-
+    .BtnContainer{
+        margin-right: 5vh;
     }
-    .sidebar input#menuicon + label span{
-        margin-left: 110px;
 
+    .sidebar ul{
+        margin-top: 8%;
+    }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 10%;
+    }
+    .BodyText a{
+        font-size: 45px;
+    }
+
+    .MenuText a{
+        font-size: 45px;
+    }
+    .LineUpContainer a{
+        font-size: 45px;
     }
 }
 
 @media (min-width :2560px){
-    .sidebar .Header .IntroText{
-        margin-left: 60px;
-    }
     .Header .IntroText{
         margin-left: 60px;
-    }
-    input#menuicon + label span{
-        margin-left: 15vh;
-    }
-    .sidebar input#menuicon + label span{
-        margin-left: 15vh;
+        font-size: 80px;
     }
 
+
+    .BtnContainer{
+        margin-right: 10vh;
+    }
+
+    .sidebar .Header .IntroText{
+        font-size: 80px;
+    }
+    .sidebar ul{
+        margin-top: 0;
+    }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 7%;
+    }
+
+
+    .sidebar ul li{
+        font-size: 50px;
+    }
+
+    .BodyText a{
+        font-size: 50px;
+    }
+
+    .MenuText a{
+        font-size: 50px;
+    }
+    .LineUpContainer a{
+        font-size: 50px;
+    }
+
+
 }
+
 input#menuicon + label{
     display: block;
     width: 3vh; height: 3vh; 
     cursor: pointer;
 }
 input#menuicon + label span{
-    display: block;
     position: absolute;
     width: 100%; height: 9%;
     background-color: #000;
     transition: all .35s;
-    margin-top: -5px;
 }
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
@@ -293,8 +382,8 @@ input#menuicon + label{overflow: hidden;}
 
 
 
-div.sidebar{
-    width: 100%; height: 100%;
+.sidebar{
+    width: 100%; height: 150%;
     background-color: #fff;
     position: fixed; top:0;
     right: -300%;
@@ -304,9 +393,6 @@ div.sidebar{
 
 }
 
-.sidebar .Header .IntroText{
-    margin-top: 35px;
-}
 
 .sidebar input#menuicon + label span:nth-child(1){
     top:40%; transform: translateY(-50%) rotate(45deg);
@@ -331,57 +417,43 @@ input#menuicon + label + div > ul{
 
 input#menuicon + label + div > ul > li{line-height: 80px;}
 
-/* 기본 구조 */
-.wrap {max-width:95%; height: 300px; margin:64px auto; overflow-x:auto; white-space:nowrap; }
-
-/* 가로 스크롤 적용 */
-.scroll__wrap {font-size:13px; scroll-snap-type: x mandatory;}
-.scroll--element + .scroll--element {margin-left:8px;}
-.scroll--element {scroll-snap-align: start; display:inline-block;  border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
-.scroll__wrap img{
-    width: 100%; height: 247px;
-}
-.scroll--element2 {scroll-snap-align: start; display:inline-block;  border-radius: 10px; font-size:10px;  text-align:center;}
-.scroll--element2 + .scroll--element2 {margin-left:8px;}
-.scroll__wrap2 {font-size:13px; height: 16px; scroll-snap-type: x mandatory;}
-
-
-
 .Header{
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
-    width: 100%; height: 75px;
-    margin-top: -10px;
+    top: 0;
+    right: 0; left: 0;
+    width: 100%; 
     background-color: white;
+    padding: 0;
 }
 
 .BtnContainer{
-    margin-top: 35px;
-    margin-right: 10%;
+    margin-top: 2.5%;
     display: flex;
     position: relative;
 }
 
-.BtnContainer img{
-    width : 16px;
-    height: 12px;
-}
 
 .IntroText{
-    margin-top: 27px;
-    margin-bottom: 71px;
+    margin-top: 2.5%;
 }
+.sidebar.on{
+    right:0;
+}
+
+/* navbar 아래로 오는 class는 무족권 margin-top or padding-top 100px 주기 */
 
 .MenuText{
     width: 20%;
     height: 10%;
-    padding-top: 100px;
+    padding-top: 20%;
     display: flex;
+    margin-left: 5%;
+
 }
 
 .MenuText a{
-    font-size: 13px;
     margin-left: 19px;
     margin-bottom: 30px;
 }
@@ -393,25 +465,16 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     margin-top: 10px;
 }
 
-.MainImg a img{
-    width: 95%;
-}
 
-.TableContainer{
-    width: 100%;
+.LineUpContainer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 2vh;
 }
 
-.table {
-    border-bottom: 1px solid black;
-}
-
-.table th,td{
-    padding: 15px;
-    
-}
 
 .sidebar.on{
     right:0;

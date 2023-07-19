@@ -1,28 +1,5 @@
 html, body {margin: 0px; padding: 0px;}
-@font-face {
-    font-family: 'Head';
-    src: url('../src/Head.otf');
-    
-}
-@font-face{
-    font-family: 'Body';
-    src: url('../src/Body.otf');
-}
 
-@font-face{
-    font-family: 'CMF';
-    src: url('../src/CaseMinorFont.otf');
-}
-
-@font-face{
-    font-family: 'CMF2';
-    src: url('../src/CaseMinorFont22.otf');
-}
-
-@font-face{
-    font-family: 'CCMF';
-    src: url('../src/CCMF.otf');
-}
 @font-face{
     font-family: 'CCMF2';
     src: url('../src/CCMF2.otf');
@@ -76,7 +53,21 @@ body{
     .wrap {max-width:95%; height: 25vh;}
     
     .TextBox{
-        font-size: 5px;
+        font-size: 10px;
+    }
+    .TextBox2{
+        font-size: 10px;
+    }
+    .MainImg a img{
+        width: 95%;
+    }
+    .VideoContainer a img{
+        margin-top: 10%;
+        width: 95%;
+    }
+
+    .scroll--element a {
+        padding: 30% 20% 20% 20%;
     }
     
 }
@@ -102,8 +93,6 @@ body{
     .BtnContainer{
         width: 20px;
         height: 20px;
-    }
-    .BtnContainer{
         margin-right: 1.5vh;
     }
     .sidebar .Header .IntroText{
@@ -112,12 +101,46 @@ body{
     .scroll--element {width: 40%;height: 30vh;}
     .scroll--element2 {width: 40%; font-size:17px;}
     .wrap {max-width:95%; height: 35vh;}
-
+    .MainImg a img{
+        width: 95%;
+    }
+    .VideoContainer a img{
+        margin-top: 10%;
+        width: 95%;
+    }
+    .scroll--element a {
+        padding: 50% 20% 20% 20%;
+    }
 }
+
+
+@media (min-width : 375px){
+    .scroll--element a {
+        padding: 40% 20% 20% 20%;
+    }
+    .scroll--element2 {font-size:15px;}
+    
+}
+
+@media (min-width : 390px){
+    .scroll--element a {
+        padding: 50% 20% 20% 20%;
+    }
+}
+
 
 @media (min-width : 400px){
     .scroll--element2 {font-size: 20px;}
     .wrap {max-width:95%; height: 35vh;}
+    .TextBox{
+        font-size: 20px;
+    }
+    .TextBox2{
+        font-size: 20px;
+    }
+    .scroll--element a {
+        padding: 50% 20% 20% 20%;
+    }
 }
 
 
@@ -137,6 +160,9 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .scroll--element a {
+        padding: 20% 20% 20% 20%;
     }
 
     .scroll--element2 {font-size:20px;}
@@ -188,12 +214,21 @@ body{
         font-size: 35px;
     }
     .BtnContainer{
-        margin-right: 5vh;
+        margin-right: 2vh;
     }
 
     .scroll--element2 {font-size:20px;}
-    .wrap {max-width:95%; height: 30vh;}
-    
+    .wrap {max-width:95%; height: 35vh;}
+    .TextBox{
+        font-size: 25px;
+    }
+    .TextBox2{
+        font-size: 25px;
+    }
+
+    .scroll--element a {
+        padding: 20% 20% 20% 20%;
+    }
 }
 @media (min-width : 800px){
     .IntroText{
@@ -225,6 +260,16 @@ body{
 
     .scroll--element2 {font-size:25px;}
     .wrap {max-width:95%; height: 35vh;}
+    .scroll--element a {
+        padding: 30% 20% 20% 20%;
+    }
+    .sidebar ul{
+        margin-top: 10%;
+    }
+    .sidebar ul span {
+        display: flex;
+        margin-top: 30%;
+    }
 }
 
 
@@ -260,7 +305,29 @@ body{
     .BtnContainer{
         margin-right: 3vh;
     }
+    .MainImg a img{
+        width: 45%;
+    }
+    .VideoContainer a img{
+        margin-top: 10%;
+        width: 55%;
+    }
+    .TextBox{
+        font-size: 30px;
+    }
+    .TextBox2{
+        font-size: 30px;
+    }
+    .scroll--element a {
+        padding: 20% 20% 20% 20%;
+    }
     
+}
+
+@media (min-width :1440px){
+    .scroll--element a {
+        padding: 10% 20% 20% 20%;
+    }
 }
 @media (min-width :1512px){
     .sidebar .Header .IntroText{
@@ -315,17 +382,19 @@ body{
     .scroll--element {width: 30%; height: 50vh;}
     .scroll--element2 {width: 30%;}
     .scroll--element2 {font-size:35px;}
-    .wrap {max-width:95%; height: 55vh;}
+    .wrap {max-width:95%; height: 75vh;}
 
     .TextBox{
         font-size: 40px;
     }
+    .TextBox2{
+        font-size: 40px;
+    }
+    
 }
 
 @media (min-width :2560px){
-    .sidebar .Header .IntroText{
-        margin-left: 60px;
-    }
+
     .Header .IntroText{
         margin-left: 60px;
         font-size: 80px;
@@ -362,8 +431,15 @@ body{
     .BtnContainer{
         margin-right: 6vh;
     }
-    
-
+    .TextBox{
+        font-size: 50px;
+    }
+    .TextBox2{
+        font-size: 50px;
+    }
+    .scroll--element a {
+        padding: 20% 20% 20% 20%;
+    }
 }
 
 input#menuicon + label{
@@ -444,7 +520,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .wrap {margin-left: 2.5%; margin-right:2.5%; margin-top: 10%; overflow-x:auto; white-space:nowrap;}
 .scroll--element a {
     display: flex;
-    padding: 20% 20% 20% 20%;
 }
 .scroll--element a img{
     width: 100%;
@@ -461,7 +536,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     right: 0; left: 0;
     width: 100%; 
     background-color: white;
-    align-items: center;
     padding: 0;
 }
 
@@ -481,9 +555,7 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     align-items: center;
 }
 
-.MainImg a img{
-    width: 95%;
-}
+
 
 .TextBox{
     display: flex;
@@ -502,25 +574,29 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 
 .TextBox2{
     margin-top: 25px;
-    margin-left: 3%;   
+    margin-left: 2.5%;
+    margin-right: 2.5%;   
     margin-bottom: 20px; 
+    display: flex;
 }
 
 .TextBox2 a{
-
+    justify-content: center;
+    align-items: center;
     text-align: justify;
 }
 
-.VideoContainer a{
+.VideoContainer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.VideoContainer a img{
-    margin-top: 125px;
+.VideoContainer img{
     width: 95%;
 }
+
+
 
 .sidebar.on{
     right:0;
