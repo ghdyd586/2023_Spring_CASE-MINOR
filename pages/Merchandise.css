@@ -79,13 +79,13 @@ body{
     }
     .sidebar .Header .IntroText{
         margin-left: 1.5vh;
-    }   
+    }
     .BodyText a{
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .MenuText a{
-        font-size: 22px;
+        font-size: 15px;
     }
     
 }
@@ -308,6 +308,7 @@ body{
         font-size: 50px;
     }
 
+
 }
 
 input#menuicon + label{
@@ -324,7 +325,6 @@ input#menuicon + label span{
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
 input#menuicon + label span:nth-child(3){top:70%;}
-
 
 .sidebar ul li{
     list-style:none;
@@ -376,7 +376,6 @@ input#menuicon + label + div > ul{
 
 input#menuicon + label + div > ul > li{line-height: 80px;}
 
-
 .Header{
     display: flex;
     position: sticky;
@@ -398,29 +397,8 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 .IntroText{
     margin-top: 2.5%;
 }
-
-
-.ImageContainer{
-    margin-top: 20px;
-    flex-direction: column;
-}
-.ImageContainer a{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ImageContainer a img{
-    width: 95%;
-}
-
-.BodyText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8%;
-    margin-top: 1%;
+.sidebar.on{
+    right:0;
 }
 
 .MenuText{
@@ -431,8 +409,28 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     display: flex;
 }
 
-
-.sidebar.on{
-    right:0;
+.ImageContainer{
+    padding: 5vh 5vh 2vh 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.ImageContainer img{
+    width: 100%;
+}
+
+.BodyText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    margin-top: 1%;
+    flex-direction: column;
+}
+
+.BodyText h3{
+    color: crimson;
+}
+
 /* navbar 아래로 오는 class는 무족권 margin-top or padding-top 100px 주기 */

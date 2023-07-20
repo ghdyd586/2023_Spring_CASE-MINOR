@@ -1,24 +1,23 @@
 html, body {margin: 0px; padding: 0px;}
 
 @font-face{
-    font-family: 'CCMF2';
-    src: url('../src/CCMF2.otf');
+    font-family: 'SBF';
+    src: url('../src/SBF.otf');
 }
 
-
-
-
 .Header{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 .sidebar{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 body{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
+
+
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
@@ -49,8 +48,8 @@ body{
     }
     
     .scroll--element {width: 40%;height: 20vh;}
-    .scroll--element2 {width: 40%; font-size:12px;}
-    .wrap {max-width:95%; height: 25vh;}
+    .scroll--element2 {width: 40%; font-size:10px;}
+    .wrap {max-width:95%; height: 30vh;}
     
     .TextBox{
         font-size: 10px;
@@ -65,11 +64,9 @@ body{
         margin-top: 10%;
         width: 95%;
     }
-
-    .scroll--element a {
-        padding: 30% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 40vh;
     }
-    
 }
 @media (min-width : 300px) {
     .IntroText{
@@ -108,39 +105,68 @@ body{
         margin-top: 10%;
         width: 95%;
     }
-    .scroll--element a {
-        padding: 50% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 40vh;
     }
 }
 
+@media (min-width : 320px){
+    .scroll--element {width: 33%; height: 27vh;}
+    .scroll--element2 {width: 33%;}
+    .scroll--element2 {font-size: 10px;}
+    .wrap {max-width:95%; height: 35vh;}
+    .VideoContainer iframe{
+        height: 40vh;
+    }
+}
+
+@media (min-width : 360px){
+    .scroll--element {width: 33%; height: 20vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size: 10px;}
+    .wrap {max-width:95%; height: 25vh;}
+    .VideoContainer iframe{
+        height: 40vh;
+    }
+}
 
 @media (min-width : 375px){
-    .scroll--element a {
-        padding: 40% 20% 20% 20%;
+
+    .scroll--element {width: 33%; height: 27vh;}
+    .scroll--element2 {width: 33%;}
+    .scroll--element2 {font-size: 12px;}
+    .wrap {max-width:95%; height: 33vh;}
+    .VideoContainer iframe{
+        height: 40vh;
     }
-    .scroll--element2 {font-size:15px;}
-    
 }
 
 @media (min-width : 390px){
-    .scroll--element a {
-        padding: 50% 20% 20% 20%;
+    .scroll--element {width: 35%; height: 20vh;}
+    .scroll--element2 {width: 35%;}
+    .scroll--element2 {font-size: 12px;}
+    .wrap {max-width:95%; height: 27vh;}
+    .VideoContainer iframe{
+        height: 40vh;
     }
 }
 
 
 @media (min-width : 400px){
-    .scroll--element2 {font-size: 20px;}
-    .wrap {max-width:95%; height: 35vh;}
+    .scroll--element {width: 35%; height: 23vh;}
+    .scroll--element2 {width: 35%;}
+    .scroll--element2 {font-size: 15px;}
+    .wrap {max-width:95%; height: 27vh;}   
     .TextBox{
         font-size: 20px;
     }
     .TextBox2{
         font-size: 20px;
     }
-    .scroll--element a {
-        padding: 50% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 40vh;
     }
+
 }
 
 
@@ -161,12 +187,16 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
-    .scroll--element a {
-        padding: 20% 20% 20% 20%;
+
+    .scroll--element {width: 30%; height: 30vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:15px;}
+    .wrap {max-width:95%; height: 37vh;}
+
+    .VideoContainer iframe{
+        height: 40vh;
     }
 
-    .scroll--element2 {font-size:20px;}
-    .wrap {max-width:95%; height: 40vh;}
 }
 
 @media (min-width : 600px){
@@ -195,6 +225,9 @@ body{
     }
     .scroll--element2 {font-size:20px;}
     .wrap {max-width:95%; height: 40vh;}
+    .VideoContainer iframe{
+        height: 40vh;
+    }
 }
 
 @media (min-width : 768px){
@@ -216,7 +249,8 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
-
+    .scroll--element {width: 30%; height: 30vh;}
+    .scroll--element2 {width: 30%;}
     .scroll--element2 {font-size:20px;}
     .wrap {max-width:95%; height: 35vh;}
     .TextBox{
@@ -225,10 +259,11 @@ body{
     .TextBox2{
         font-size: 25px;
     }
-
-    .scroll--element a {
-        padding: 20% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 40vh;
     }
+
+    
 }
 @media (min-width : 800px){
     .IntroText{
@@ -260,15 +295,16 @@ body{
 
     .scroll--element2 {font-size:25px;}
     .wrap {max-width:95%; height: 35vh;}
-    .scroll--element a {
-        padding: 30% 20% 20% 20%;
-    }
+
     .sidebar ul{
         margin-top: 10%;
     }
     .sidebar ul span {
         display: flex;
         margin-top: 30%;
+    }
+    .VideoContainer iframe{
+        height: 40vh;
     }
 }
 
@@ -279,10 +315,10 @@ body{
         margin-left: 30px;
     }
     
-    .scroll--element {width: 30%; height: 30vh;}
-    .scroll--element2 {width: 30%;}
-    .scroll--element2 {font-size:25px;}
-    .wrap {max-width:95%; height: 35vh;}
+    .scroll--element {width: 35%; height: 33vh;}
+    .scroll--element2 {width: 35%;}
+    .scroll--element2 {font-size:30px;}
+    .wrap {max-width:95%; height: 40vh;}
     .sidebar{
         font-size: 20px;
     }
@@ -306,7 +342,7 @@ body{
         margin-right: 3vh;
     }
     .MainImg a img{
-        width: 45%;
+        width: 50%;
     }
     .VideoContainer a img{
         margin-top: 10%;
@@ -318,15 +354,19 @@ body{
     .TextBox2{
         font-size: 30px;
     }
-    .scroll--element a {
-        padding: 20% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 60vh;
     }
     
 }
 
 @media (min-width :1440px){
-    .scroll--element a {
-        padding: 10% 20% 20% 20%;
+    .scroll--element {width: 30%; height: 60vh;}
+    .scroll--element2 {width: 30%;}
+    .scroll--element2 {font-size:35px;}
+    .wrap {max-width:95%; height: 80vh;}
+    .VideoContainer iframe{
+        height: 60vh;
     }
 }
 @media (min-width :1512px){
@@ -379,16 +419,19 @@ body{
         margin-top: 10%;
     }
 
-    .scroll--element {width: 30%; height: 50vh;}
+    .scroll--element {width: 30%; height: 75vh;}
     .scroll--element2 {width: 30%;}
     .scroll--element2 {font-size:35px;}
-    .wrap {max-width:95%; height: 75vh;}
+    .wrap {max-width:95%; height: 90vh;}
 
     .TextBox{
         font-size: 40px;
     }
     .TextBox2{
         font-size: 40px;
+    }
+    .VideoContainer iframe{
+        height: 70vh;
     }
     
 }
@@ -423,10 +466,10 @@ body{
     }
 
 
-    .scroll--element {width: 30%; height: 70vh;}
-    .scroll--element2 {width: 30%;}
+    .scroll--element {width: 25%; height: 50vh;}
+    .scroll--element2 {width: 25%;}
     .scroll--element2 {font-size:60px;}
-    .wrap {max-width:95%; height: 80vh;}
+    .wrap {max-width:95%; height: 100vh;}
 
     .BtnContainer{
         margin-right: 6vh;
@@ -437,9 +480,10 @@ body{
     .TextBox2{
         font-size: 50px;
     }
-    .scroll--element a {
-        padding: 20% 20% 20% 20%;
+    .VideoContainer iframe{
+        height: 90vh;
     }
+
 }
 
 input#menuicon + label{
@@ -515,14 +559,15 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 /* 가로 스크롤 적용 */
 .scroll__wrap {font-size:13px; scroll-snap-type: x mandatory;}
 .scroll--element + .scroll--element {margin-left:8px;}
-.scroll--element {scroll-snap-align: start; display:inline-block; border-radius: 10px; background:#eeeeee; text-align:center;}
+.scroll--element {scroll-snap-align: start; display:inline-block; border-radius: 10px; text-align:center;}
 .scroll--element2 {scroll-snap-align: start; display:inline-block; border-radius: 10px; text-align:center;}
-.wrap {margin-left: 2.5%; margin-right:2.5%; margin-top: 10%; overflow-x:auto; white-space:nowrap;}
+.wrap {margin-left: 2.5%; margin-right:2.5%; margin-top: 10vh; margin-bottom: 10vh; overflow-x:auto; white-space:nowrap;}
 .scroll--element a {
     display: flex;
 }
 .scroll--element a img{
     width: 100%;
+    border-radius: 10px;
 }
 .scroll--element2 + .scroll--element2 {margin-left:8px;}
 .scroll__wrap2 { font-size:13px; height: 16px; scroll-snap-type: x mandatory;}
@@ -562,6 +607,8 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     flex-direction: column;
     margin-top: 64px;
     width: 95%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
@@ -573,10 +620,9 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 }
 
 .TextBox2{
-    margin-top: 25px;
     margin-left: 2.5%;
     margin-right: 2.5%;   
-    margin-bottom: 20px; 
+    padding: 10vh 0vh 10vh 0vh;
     display: flex;
 }
 
@@ -592,7 +638,7 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     align-items: center;
 }
 
-.VideoContainer img{
+.VideoContainer iframe{
     width: 95%;
 }
 

@@ -1,21 +1,22 @@
 html, body {margin: 0px; padding: 0px;}
 
 @font-face{
-    font-family: 'CCMF2';
-    src: url('../src/CCMF2.otf');
+    font-family: 'SBF';
+    src: url('../src/SBF.otf');
 }
 
 .Header{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 .sidebar{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 body{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
+
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;

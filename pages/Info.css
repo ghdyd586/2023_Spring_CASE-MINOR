@@ -1,21 +1,22 @@
 html, body {margin: 0px; padding: 0px;}
 
 @font-face{
-    font-family: 'CCMF2';
-    src: url('../src/CCMF2.otf');
+    font-family: 'SBF';
+    src: url('../src/SBF.otf');
 }
 
 .Header{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 .sidebar{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 body{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
+
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
@@ -93,6 +94,9 @@ body{
     .MenuText a{
         font-size: 15px;
     }
+    .MainImg a img{
+        width: 95%;
+    }
 }
 
 @media (min-width : 360px){
@@ -104,6 +108,9 @@ body{
     }
     .LineUpContainer a{
         font-size: 20px;
+    }
+    .MainImg a img{
+        width: 95%;
     }
 }
 
@@ -124,6 +131,9 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .MainImg a img{
+        width: 95%;
     }
 }
 @media (min-width : 600px){
@@ -160,6 +170,9 @@ body{
     .LineUpContainer a{
         font-size: 20px;
     }
+    .MainImg a img{
+        width: 95%;
+    }
 }
 @media (min-width : 768px){
     .IntroText{
@@ -190,6 +203,9 @@ body{
     .LineUpContainer a{
         font-size: 25px;
     }
+    .MainImg a img{
+        width: 95%;
+    }
 }
 @media (min-width : 800px){
     .IntroText{
@@ -215,6 +231,9 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .MainImg a img{
+        width: 95%;
     }
 }
 @media (min-width : 1024px){
@@ -272,7 +291,9 @@ body{
     .LineUpContainer a{
         font-size: 40px;
     }
-    
+    .MainImg a img{
+        width: 45%;
+    }
 }
     
 
@@ -307,6 +328,9 @@ body{
     }
     .LineUpContainer a{
         font-size: 45px;
+    }
+    .MainImg a img{
+        width: 45%;
     }
 }
 
@@ -347,6 +371,9 @@ body{
     }
     .LineUpContainer a{
         font-size: 50px;
+    }
+    .MainImg a img{
+        width: 45%;
     }
 
 
@@ -454,16 +481,24 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 }
 
 .MenuText a{
-    margin-left: 19px;
+    margin-left: 5%;
     margin-bottom: 30px;
+}
+
+.MainImg{
+    display: flex;
+    flex-direction: column;
 }
 
 .MainImg a{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
+
+    
 }
+
 
 
 .LineUpContainer{
@@ -472,9 +507,13 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2vh;
+    padding: 5vh 0vh 5vh 0vh;
 }
 
+.LineUpContainer a{
+    margin-bottom: 2vh;
+    
+}
 
 .sidebar.on{
     right:0;

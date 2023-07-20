@@ -1,21 +1,22 @@
 html, body {margin: 0px; padding: 0px;}
 
 @font-face{
-    font-family: 'CCMF2';
-    src: url('../src/CCMF2.otf');
+    font-family: 'SBF';
+    src: url('../src/SBF.otf');
 }
 
 .Header{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 .sidebar{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 body{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
+
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
@@ -42,6 +43,13 @@ body{
     
     .sidebar .Header .IntroText{
         margin-left: 3%;
+        font-size: 15px;
+    }
+    .BodyText a{
+        font-size: 15px;
+    }
+
+    .MenuText a{
         font-size: 15px;
     }
 }
@@ -71,6 +79,13 @@ body{
     }
     .sidebar .Header .IntroText{
         margin-left: 1.5vh;
+    }
+    .BodyText a{
+        font-size: 15px;
+    }
+
+    .MenuText a{
+        font-size: 15px;
     }
 }
 
@@ -116,6 +131,13 @@ body{
     .BtnContainer{
         margin-right: 4.5vh;
     }
+    .BodyText a{
+        font-size: 20px;
+    }
+
+    .MenuText a{
+        font-size: 20px;
+    }
 }
 @media (min-width : 768px){
     .IntroText{
@@ -135,6 +157,13 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .BodyText a{
+        font-size: 25px;
+    }
+
+    .MenuText a{
+        font-size: 25px;
     }
 }
 @media (min-width : 800px){
@@ -191,7 +220,28 @@ body{
     .BtnContainer{
         margin-right: 3vh;
     }
+    .BodyText a{
+        font-size: 30px;
+    }
+
+    .MenuText a{
+        font-size: 30px;
+    }
+    
 }
+
+@media (min-width :1440px){
+
+    .BodyText a{
+        font-size: 40px;
+    }
+
+    .MenuText a{
+        font-size: 40px;
+    }
+
+}
+
 
 @media (min-width :1920px){
     .sidebar .Header .IntroText{
@@ -213,6 +263,13 @@ body{
     .sidebar ul span {
         display: flex;
         margin-top: 10%;
+    }
+    .BodyText a{
+        font-size: 45px;
+    }
+
+    .MenuText a{
+        font-size: 45px;
     }
 }
 
@@ -243,7 +300,13 @@ body{
     .sidebar ul li{
         font-size: 50px;
     }
+    .BodyText a{
+        font-size: 50px;
+    }
 
+    .MenuText a{
+        font-size: 50px;
+    }
 
 }
 
@@ -328,13 +391,62 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     display: flex;
     position: relative;
 }
-
+.MenuText{
+    width: 20%;
+    height: 10%;
+    padding-top: 20%;
+    margin-left: 5%;
+    display: flex;
+}
 
 .IntroText{
     margin-top: 2.5%;
 }
 .sidebar.on{
     right:0;
+}
+
+.ImageContainer{
+    margin-top: 20px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ImageContainer img{
+    width: 95%;
+    
+}
+
+.BodyText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+
+}
+
+.BodyText a{
+    margin-bottom: 5%;
+}
+
+.ButtonContainer {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    padding: 5vh 0vh 5vh 0vh;
+}
+
+.ButtonContainer a{
+    display: flex;
+    align-items: center;
+}
+
+.ButtonContainer a img{
+    width: 8vh;
 }
 
 /* navbar 아래로 오는 class는 무족권 margin-top or padding-top 100px 주기 */

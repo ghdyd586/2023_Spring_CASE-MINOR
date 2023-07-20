@@ -1,21 +1,22 @@
 html, body {margin: 0px; padding: 0px;}
 
 @font-face{
-    font-family: 'CCMF2';
-    src: url('../src/CCMF2.otf');
+    font-family: 'SBF';
+    src: url('../src/SBF.otf');
 }
 
 .Header{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 .sidebar{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
 
 body{
-    font-family: 'CCMF2';
+    font-family: 'SBF';
 }
+
 @media (max-width : 300px) {
     .IntroText{
         font-size: 15px;
@@ -43,6 +44,12 @@ body{
     .sidebar .Header .IntroText{
         margin-left: 3%;
         font-size: 15px;
+    }
+    .ImageContainer h1{
+        font-size: 15px;
+    }
+    .ImageContainer a{
+        font-size: 15px;    
     }
 }
 @media (min-width : 300px) {
@@ -72,6 +79,12 @@ body{
     .sidebar .Header .IntroText{
         margin-left: 1.5vh;
     }
+    .ImageContainer h1{
+        font-size: 22px;
+    }
+    .ImageContainer a{
+        font-size: 22px;    
+    }
 }
 
 @media (min-width : 540px){
@@ -91,6 +104,7 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
+
 }
 @media (min-width : 600px){
     .IntroText{
@@ -115,6 +129,12 @@ body{
     
     .BtnContainer{
         margin-right: 4.5vh;
+    }
+    .ImageContainer h1{
+        font-size: 27px;
+    }
+    .ImageContainer a{
+        font-size: 27px;    
     }
 }
 @media (min-width : 768px){
@@ -335,10 +355,21 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 }
 
 
-.ImageContainer a{
+.ImageContainer {
+    padding-top: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+}
+
+.ImageContainer a{
+    text-align: center;
+    color: deeppink;
 }
 
 .ImageContainer a img{
@@ -347,7 +378,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 
 .ImageContainer h1{
     text-align: center;
-    font-size: 4vh;
 }
 
 
