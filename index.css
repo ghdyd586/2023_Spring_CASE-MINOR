@@ -111,8 +111,8 @@ body{
 }
 
 @media (min-width : 320px){
-    .scroll--element {width: 33%; height: 27vh;}
-    .scroll--element2 {width: 33%;}
+    .scroll--element {width: 35%; height: 27vh;}
+    .scroll--element2 {width: 35%;}
     .scroll--element2 {font-size: 10px;}
     .wrap {max-width:95%; height: 35vh;}
     .VideoContainer iframe{
@@ -122,7 +122,7 @@ body{
 
 @media (min-width : 360px){
     .scroll--element {width: 33%; height: 20vh;}
-    .scroll--element2 {width: 30%;}
+    .scroll--element2 {width: 33%;}
     .scroll--element2 {font-size: 10px;}
     .wrap {max-width:95%; height: 25vh;}
     .VideoContainer iframe{
@@ -132,10 +132,10 @@ body{
 
 @media (min-width : 375px){
 
-    .scroll--element {width: 33%; height: 27vh;}
-    .scroll--element2 {width: 33%;}
+    .scroll--element {width: 35%; height: 25vh;}
+    .scroll--element2 {width: 35%;}
     .scroll--element2 {font-size: 12px;}
-    .wrap {max-width:95%; height: 33vh;}
+    .wrap {max-width:95%; height: 30vh;}
     .VideoContainer iframe{
         height: 40vh;
     }
@@ -153,10 +153,10 @@ body{
 
 
 @media (min-width : 400px){
-    .scroll--element {width: 35%; height: 23vh;}
+    .scroll--element {width: 35%; height: 20vh;}
     .scroll--element2 {width: 35%;}
     .scroll--element2 {font-size: 15px;}
-    .wrap {max-width:95%; height: 27vh;}   
+    .wrap {max-width:95%; height: 30vh;}   
     .TextBox{
         font-size: 20px;
     }

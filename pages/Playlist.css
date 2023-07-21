@@ -52,6 +52,9 @@ body{
     .MenuText a{
         font-size: 15px;
     }
+    .ImageContainer a img{
+        width: 95%;
+    }
 }
 @media (min-width : 300px) {
     .IntroText{
@@ -87,7 +90,9 @@ body{
     .MenuText a{
         font-size: 22px;
     }
-    
+    .ImageContainer a img{
+        width: 95%;
+    }
 }
 
 @media (min-width : 540px){
@@ -106,6 +111,9 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .ImageContainer a img{
+        width: 95%;
     }
 }
 @media (min-width : 600px){
@@ -139,6 +147,9 @@ body{
     .MenuText a{
         font-size: 20px;
     }
+    .ImageContainer a img{
+        width: 95%;
+    }
 }
 @media (min-width : 768px){
     .IntroText{
@@ -166,6 +177,9 @@ body{
     .MenuText a{
         font-size: 25px;
     }
+    .ImageContainer a img{
+        width: 95%;
+    }
 }
 @media (min-width : 800px){
     .IntroText{
@@ -191,6 +205,9 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
+    }
+    .ImageContainer a img{
+        width: 95%;
     }
 }
 @media (min-width : 1024px){
@@ -228,6 +245,10 @@ body{
     .MenuText a{
         font-size: 30px;
     }
+    .ImageContainer a img{
+        width: 45%;
+    }
+    
 }
 
 
@@ -240,7 +261,9 @@ body{
     .MenuText a{
         font-size: 40px;
     }
-
+    .ImageContainer a img{
+        width: 45%;
+    }
 }
 
 @media (min-width :1920px){
@@ -270,6 +293,9 @@ body{
 
     .MenuText a{
         font-size: 45px;
+    }
+    .ImageContainer a img{
+        width: 45%;
     }
 }
 
@@ -307,7 +333,9 @@ body{
     .MenuText a{
         font-size: 50px;
     }
-
+    .ImageContainer a img{
+        width: 45%;
+    }
 }
 
 input#menuicon + label{
@@ -411,9 +439,6 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     align-items: center;
 }
 
-.ImageContainer a img{
-    width: 95%;
-}
 
 .BodyText{
     display: flex;

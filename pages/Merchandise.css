@@ -52,6 +52,10 @@ body{
     .MenuText a{
         font-size: 15px;
     }
+    .BodyText{
+        line-height: 10px;
+    }
+
 }
 @media (min-width : 300px) {
     .IntroText{
@@ -87,7 +91,20 @@ body{
     .MenuText a{
         font-size: 15px;
     }
+    .BodyText{
+        line-height: 10px;
+    }
+
     
+}
+
+@media (min-width : 360px){
+    .MenuText a{
+        font-size: 20px;
+    }
+    .BodyText a{
+        font-size: 20px;
+    }
 }
 
 @media (min-width : 540px){
@@ -107,6 +124,10 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
+    .BodyText{
+        line-height: 10px;
+    }
+
 }
 @media (min-width : 600px){
     .IntroText{
@@ -139,6 +160,10 @@ body{
     .MenuText a{
         font-size: 20px;
     }
+    .BodyText{
+        line-height: 10px;
+    }
+
 }
 @media (min-width : 768px){
     .IntroText{
@@ -166,6 +191,10 @@ body{
     .MenuText a{
         font-size: 25px;
     }
+    .BodyText{
+        line-height: 15px;
+    }
+
 }
 @media (min-width : 800px){
     .IntroText{
@@ -192,6 +221,10 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
+    .BodyText{
+        line-height: 15px;
+    }
+    
 }
 @media (min-width : 1024px){
     .IntroText{
@@ -228,6 +261,10 @@ body{
     .MenuText a{
         font-size: 30px;
     }
+    .BodyText{
+        line-height: 20px;
+    }
+
 }
 
 
@@ -240,7 +277,9 @@ body{
     .MenuText a{
         font-size: 40px;
     }
-
+    .BodyText{
+        line-height: 20px;
+    }
 }
 
 @media (min-width :1920px){
@@ -270,6 +309,9 @@ body{
 
     .MenuText a{
         font-size: 45px;
+    }
+    .BodyText{
+        line-height: 20px;
     }
 }
 
@@ -307,7 +349,9 @@ body{
     .MenuText a{
         font-size: 50px;
     }
-
+    .BodyText{
+        line-height: 30px;
+    }
 
 }
 
@@ -410,7 +454,7 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 }
 
 .ImageContainer{
-    padding: 5vh 5vh 2vh 5vh;
+    padding: 5vh 2.5% 2vh 2.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,6 +462,7 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 
 .ImageContainer img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .BodyText{
