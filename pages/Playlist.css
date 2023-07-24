@@ -210,6 +210,21 @@ body{
         width: 95%;
     }
 }
+
+@media (min-width : 960px){
+    .sidebar{
+        font-size: 30px;
+    }
+    .sidebar ul{
+        margin-top: 15%;
+        
+    }
+    .sidebar ul span {
+        display: flex;
+        margin-top: 30%;
+    }
+}
+
 @media (min-width : 1024px){
     .IntroText{
         font-size: 40px;
