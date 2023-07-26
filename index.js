@@ -10,5 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelector(".sidebar").classList.add("on");
           //slideIn시 menuBtn의 img src를 cross icon으로 변경
         }
-      });
-  });
+    });
+});
+
+const setVh = () => {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`)
+};
+window.addEventListener('resize', setVh);
+setVh();

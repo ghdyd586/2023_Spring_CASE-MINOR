@@ -28,7 +28,6 @@ body{
     }
     .sidebar ul{
         margin-top: 20%;
-        
     }
     .sidebar ul span {
         display: flex;
@@ -45,18 +44,16 @@ body{
         margin-left: 3%;
         font-size: 15px;
     }
+    .MapContainer iframe{
+        width: 100%;
+    }
+    
+    
     .BodyText a{
         font-size: 15px;
     }
 
     .MenuText a{
-        font-size: 15px;
-    }
-    .MainImg a img{
-        width: 95%;
-    }
-
-    .LineUpContainer a{
         font-size: 15px;
     }
 }
@@ -87,6 +84,10 @@ body{
     .sidebar .Header .IntroText{
         margin-left: 1.5vh;
     }
+    .MapContainer iframe{
+        width: 100%;
+    }
+
     .BodyText a{
         font-size: 15px;
     }
@@ -94,11 +95,8 @@ body{
     .MenuText a{
         font-size: 15px;
     }
-    .MainImg a img{
-        width: 95%;
-    }
+    
 }
-
 @media (min-width : 360px){
     .MenuText a{
         font-size: 20px;
@@ -106,14 +104,7 @@ body{
     .BodyText a{
         font-size: 20px;
     }
-    .LineUpContainer a{
-        font-size: 20px;
-    }
-    .MainImg a img{
-        width: 95%;
-    }
 }
-
 
 @media (min-width : 540px){
     .sidebar ul{
@@ -131,9 +122,6 @@ body{
     }
     .BtnContainer{
         margin-right: 2vh;
-    }
-    .MainImg a img{
-        width: 95%;
     }
 }
 @media (min-width : 600px){
@@ -160,18 +148,15 @@ body{
     .BtnContainer{
         margin-right: 4.5vh;
     }
+    .MapContainer iframe{
+        width: 70%;
+    }
     .BodyText a{
         font-size: 20px;
     }
 
     .MenuText a{
         font-size: 20px;
-    }
-    .LineUpContainer a{
-        font-size: 20px;
-    }
-    .MainImg a img{
-        width: 95%;
     }
 }
 @media (min-width : 768px){
@@ -200,12 +185,6 @@ body{
     .MenuText a{
         font-size: 25px;
     }
-    .LineUpContainer a{
-        font-size: 25px;
-    }
-    .MainImg a img{
-        width: 95%;
-    }
 }
 @media (min-width : 800px){
     .IntroText{
@@ -232,9 +211,7 @@ body{
     .BtnContainer{
         margin-right: 2vh;
     }
-    .MainImg a img{
-        width: 95%;
-    }
+    
 }
 @media (min-width : 960px){
     .sidebar{
@@ -255,6 +232,8 @@ body{
         margin-left: 30px;
     }
     
+    .scroll--element {scroll-snap-align: start; display:inline-block; width: 30%; height: 200px; border-radius: 10px; background:#D9D9D9; font-size:16px; text-align:center;}
+    .scroll--element2 {scroll-snap-align: start; display:inline-block; width: 30%; height: 16px; border-radius: 10px; font-size:10px;  text-align:center;}
     .sidebar{
         font-size: 20px;
     }
@@ -284,12 +263,7 @@ body{
     .MenuText a{
         font-size: 30px;
     }
-    .MainImg a img{
-        width: 45%;
-    }
-    .LineUpContainer a{
-        font-size: 30px;
-    }
+    
 }
 
 @media (min-width :1440px){
@@ -297,20 +271,38 @@ body{
     .BodyText a{
         font-size: 40px;
     }
-    
+
     .MenuText a{
         font-size: 40px;
     }
-    .LineUpContainer a{
-        font-size: 40px;
+
+}
+
+
+
+
+@media (min-width :1512px){
+    .sidebar .Header .IntroText{
+        margin-left: 40px;
     }
-    .MainImg a img{
-        width: 45%;
+
+    .IntroText{
+        margin-left: 40px;
+    }
+
+    .BtnContainer{
+        margin-right: 5vh;
+    }
+
+    .sidebar ul{
+        margin-top: 8%;
+    }
+    
+    .sidebar ul span {
+        display: flex;
+        margin-top: 10%;
     }
 }
-    
-
-
 @media (min-width :1920px){
     .sidebar .Header .IntroText{
         margin-left: 50px;
@@ -339,15 +331,10 @@ body{
     .MenuText a{
         font-size: 45px;
     }
-    .LineUpContainer a{
-        font-size: 45px;
-    }
-    .MainImg a img{
-        width: 45%;
-    }
 }
 
 @media (min-width :2560px){
+    
     .Header .IntroText{
         margin-left: 60px;
         font-size: 80px;
@@ -382,14 +369,21 @@ body{
     .MenuText a{
         font-size: 50px;
     }
-    .LineUpContainer a{
-        font-size: 50px;
-    }
-    .MainImg a img{
-        width: 45%;
-    }
+}
 
 
+.sidebar input#menuicon + label span:nth-child(1){
+    top:40%; transform: translateY(-50%) rotate(45deg);
+}
+.sidebar input#menuicon + label span:nth-child(2){
+    opacity: 0;
+}
+.sidebar input#menuicon + label span:nth-child(3){
+    top:40%; transform: translateY(-50%) rotate(-45deg);
+}
+
+.sidebar input#menuicon + label span{
+    margin-top: 1.5%;
 }
 
 input#menuicon + label{
@@ -402,10 +396,12 @@ input#menuicon + label span{
     width: 100%; height: 9%;
     background-color: #000;
     transition: all .35s;
+
 }
 input#menuicon + label span:nth-child(1){top:0;}
 input#menuicon + label span:nth-child(2){top:40%; transform: translateY(-50%);}
 input#menuicon + label span:nth-child(3){top:70%;}
+
 
 .sidebar ul li{
     list-style:none;
@@ -434,16 +430,6 @@ input#menuicon + label{overflow: hidden;}
 }
 
 
-.sidebar input#menuicon + label span:nth-child(1){
-    top:40%; transform: translateY(-50%) rotate(45deg);
-}
-.sidebar input#menuicon + label span:nth-child(2){
-    opacity: 0;
-}
-.sidebar input#menuicon + label span:nth-child(3){
-    top:40%; transform: translateY(-50%) rotate(-45deg);
-}
-
 
 input#menuicon:checked + label + div{
     right: 0;
@@ -456,6 +442,8 @@ input#menuicon + label + div > ul{
 }
 
 input#menuicon + label + div > ul > li{line-height: 80px;}
+
+
 
 .Header{
     display: flex;
@@ -474,58 +462,69 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     position: relative;
 }
 
-
 .IntroText{
     margin-top: 2.5%;
 }
-.sidebar.on{
-    right:0;
-}
-
-/* navbar 아래로 오는 class는 무족권 margin-top or padding-top 100px 주기 */
 
 .MenuText{
     width: 20%;
     height: 10%;
     padding-top: 20%;
-    display: flex;
     margin-left: 5%;
-
-}
-
-.MenuText a{
-    margin-left: 5%;
-    margin-bottom: 30px;
-}
-
-.MainImg{
     display: flex;
-    flex-direction: column;
 }
 
-.MainImg a{
+.ImageContainer{
+    margin-top: 20px;
+}
+
+.ImageContainer a{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 10px;
-
-    
-}
-
-
-
-.LineUpContainer{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5vh 0vh 5vh 0vh;
 }
 
-.LineUpContainer a{
-    margin-bottom: 2vh;
-    
+.ImageContainer a img{
+    width: 95%;
+}
+
+.ImageContainer2{
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    padding-bottom: 5vh;
+}
+
+.ImageContainer2 img{
+    width: 90%;
+}
+
+.BodyText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+
+.MapContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.MapContainer iframe{
+    margin-top: 8%;
+    height: 50vh;
+    width: 90%;
+    margin-bottom: 10%;
 }
 
 .sidebar.on{

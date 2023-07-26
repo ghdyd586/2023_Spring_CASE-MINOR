@@ -476,13 +476,16 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
 
 .ImageContainer{
     margin-top: 20px;
+}
+
+.ImageContainer a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ImageContainer img{
-    width: 100%;
+.ImageContainer a img{
+    width: 95%;
 }
 
 .ImageContainer2{
@@ -491,6 +494,9 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    padding-bottom: 5vh;
 }
 
 .ImageContainer2 img{
@@ -501,7 +507,7 @@ input#menuicon + label + div > ul > li{line-height: 80px;}
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin : 2vh 0vh 6vh 0vh;
 
 }
 
